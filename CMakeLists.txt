@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.23)
 
 set(CMAKE_CXX_STANDAR 17)
 
-project(project_name)
+get_filename_component(DIR ${CMAKE_SOURCE_DIR} NAME)
+
+project(${DIR})
 
 file(GLOB PROJECT_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp" "${CMAKE_SOURCE_DIR}/src/*.c")
 
