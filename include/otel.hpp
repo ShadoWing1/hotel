@@ -4,27 +4,28 @@
 #include <array>
 
 class Musteri {
-    std::string isim;
-};
+    public:
+        std::string isim;
+        int kat_;
+        int katdaki_oda;
+}; 
 
 
 class Oda
 {
     private:
-        int seviye = 1;
-        int fiyat;
-        Musteri* sahip;
+        Musteri* sahip = nullptr;
     public:
-        Oda(int kat) {
-            fiyat = kat;
-        }
+        Musteri musteri;
+        int kat = musteri.kat_;
+        int fiyat;
+        int hesap();
 };
 
-struct Istekler {
-    int maxFiyat;
-    int minFiyat;
-    int yildiz;
-};
+//struct Istekler {
+//    int kat_;
+//    int katdaki_oda;
+//};
 
 template <int kat_sayisi, int kat_basina_oda>
 class Resepsiyon {
@@ -44,3 +45,11 @@ class Otel
         Resepsiyon<kat_sayisi, kat_basina_oda> r;
     public:
 };
+
+
+void arayuz()
+{
+    yaz("a");
+    yaz("b");  
+    yaz("c");
+}
