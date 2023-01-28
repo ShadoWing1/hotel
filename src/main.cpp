@@ -1,6 +1,4 @@
-#include <kutuphane.hpp>
-
-#include <cmath>
+#include <iostream>
 
 int main(int argc, char const *argv[])
 {

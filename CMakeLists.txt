@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDAR 17)
 
 get_filename_component(DIR ${CMAKE_SOURCE_DIR} NAME)
 
-project(${DIR})
+project("msg")
 
 file(GLOB PROJECT_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp" "${CMAKE_SOURCE_DIR}/src/*.c")
 
