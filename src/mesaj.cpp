@@ -1,6 +1,6 @@
-#include <mesaj.cpp>
+#include <mesaj.hpp>
 
-Mesaj::mesaj_yaz(std::string gonderi,std::string zaman)
+void Mesaj::mesaj_yaz(std::string gonderi,std::string zaman ,std::)
 {
     std::cout << "     " << gonderi << "  :  " << zaman << "\n";
 }

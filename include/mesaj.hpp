@@ -1,15 +1,19 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 
-template<typename T>
 
-void yaz (T a,bool b = true)
+
+class Mesaj
 {
-    std::cout << a;
+    private:
+        std::vector<std::string> kisi;
+        std::vector<std::string> grup;
+        
+        std::string mesaj;
+        std::string zaman; 
 
-    if(b == 1)
-    {
-        std::cout << "\n";
-    } 
-}
+        void mesaj_yaz(std::string gonderi, std::string zaman);
+        void mesaj_sil(std::string kitap_ismi);
+};
